@@ -31,20 +31,17 @@ public class CategoriaServiceImp implements CategoriaService{
 
 	@Override
 	public Categoria update(Categoria categoria) {
-		// TODO Auto-generated method stub
-		return null;
+		return categoriaServiceRemote.update(categoria);
 	}
 
 	@Override
 	public Categoria create(Categoria categoria) {
-		// TODO Auto-generated method stub
-		return null;
+		return categoriaServiceRemote.create(categoria);
 	}
 
 	@Override
-	public void delete(int codigo) {
-		// TODO Auto-generated method stub
-		
+	public void delete(long codigo) {
+		categoriaServiceRemote.delete(codigo);
 	}
 
 }

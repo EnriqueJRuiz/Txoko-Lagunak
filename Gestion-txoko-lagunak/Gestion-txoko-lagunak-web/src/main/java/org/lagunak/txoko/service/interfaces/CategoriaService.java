@@ -17,5 +17,5 @@ public interface CategoriaService {
 	
 	public Categoria create(Categoria categoria);
 	
-	public void delete (int codigo);
+	public void delete (long codigocategoria);
 }

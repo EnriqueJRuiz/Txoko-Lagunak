@@ -21,9 +21,23 @@
     </bean>
     
     <jee:jndi-lookup id="categoriaServiceRemote" jndi-name="java:app/Gestion-txoko-lagunak-ejb/categoriaServiceBean"/>
+    <jee:jndi-lookup id="usuarioServiceRemote" jndi-name="java:app/Gestion-txoko-lagunak-ejb/usuarioServiceBean"/>
+    <jee:jndi-lookup id="comentarioServiceRemote" jndi-name="java:app/Gestion-txoko-lagunak-ejb/comentarioServiceBean"/>
+    <jee:jndi-lookup id="articuloServiceRemote" jndi-name="java:app/Gestion-txoko-lagunak-ejb/articuloServiceBean"/>
     
     <bean id="categoriaServiceImp" class="org.lagunak.txoko.service.CategoriaServiceImp">
         <property name="categoriaServiceRemote" ref="categoriaServiceRemote" />
     </bean>
-    	
+    
+     <bean id="coemntarioServiceImp" class="org.lagunak.txoko.service.ComentarioServiceImp">
+        <property name="comentarioServiceRemote" ref="comentarioServiceRemote" />
+    </bean>
+    
+     <bean id="usuarioServiceImp" class="org.lagunak.txoko.service.UsuarioServiceImp">
+        <property name="usuarioServiceRemote" ref="usuarioServiceRemote" />
+    </bean>
+    
+     <bean id="articuloServiceImp" class="org.lagunak.txoko.service.ArticuloServiceImp">
+        <property name="articuloServiceRemote" ref="articuloServiceRemote" />
+    </bean>	
 </beans>
