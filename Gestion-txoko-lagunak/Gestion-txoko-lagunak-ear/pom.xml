@@ -60,7 +60,7 @@
                             <groupId>org.lagunak.txoko</groupId>
                             <bundleFileName>Gestion-txoko-lagunak-web.war</bundleFileName>
                             <artifactId>${artifact.war}</artifactId>
-                            <contextRoot>gestiondocente</contextRoot>
+                            <contextRoot>txokolagunak</contextRoot>
                         </webModule>
 
                         <ejbModule>
